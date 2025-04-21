@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import { MermaidMarkdown, MermaidPlugin } from 'vitepress-plugin-mermaid';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -76,5 +77,17 @@ export default defineConfig({
   },
   markdown: {
     math: true,
-  }
+    config(md) {
+      md.use(MermaidMarkdown);
+    },
+  },
+  vite: {
+    plugins: [MermaidPlugin()],
+    optimizeDeps: {
+      include: ['mermaid'],
+    },
+    ssr: {
+      noExternal: ['mermaid'],
+    },
+  },
 })
