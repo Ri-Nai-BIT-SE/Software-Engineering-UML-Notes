@@ -112,6 +112,13 @@ button.copy::after {
   border-radius: 8px;
 }
 
+.vp-doc table {
+  margin: 20px auto;
+  display: table;
+  width: auto;
+  max-width: 100%;
+}
+
 
 .simple-tag {
   margin: 0 0.125em 0.333em 0;
@@ -134,4 +141,10 @@ button.copy::after {
 .simple-tag:hover {
   color: #ffffff;
   background-color: var(--vp-c-brand-1);
+}
+
+.mermaid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
