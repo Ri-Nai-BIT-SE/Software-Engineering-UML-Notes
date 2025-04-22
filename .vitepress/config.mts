@@ -69,6 +69,12 @@ export default defineConfig({
           { text: '4. 面谈', link: '/第五章-需求获取/4-面谈.md' },
           { text: '5. 原型', link: '/第五章-需求获取/5-原型.md' },
         ]
+      },
+      {
+        text: '第六章-需求分析概述',
+        link: '/第六章-需求分析概述/index.md',
+        items: [
+        ]
       }
     ],
     socialLinks: [
