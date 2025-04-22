@@ -16,7 +16,7 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
     ],
-    outline: [2, 5],
+    outline: [1, 5],
     sidebar: [
       {
         text: '第一章-软件需求工程概述',
