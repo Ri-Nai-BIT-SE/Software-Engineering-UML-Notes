@@ -75,6 +75,15 @@ export default defineConfig({
         link: '/第六章-需求分析概述/index.md',
         items: [
         ]
+      },
+      {
+        text: '第七章-结构化需求分析方法',
+        link: '/第七章-结构化需求分析方法/index.md',
+        items: [
+          { text: '1. 结构化需求分析与建模', link: '/第七章-结构化需求分析方法/1-结构化需求分析与建模.md' },
+          { text: '2. 过程建模', link: '/第七章-结构化需求分析方法/2-过程建模.md' },
+          { text: '3. 数据建模', link: '/第七章-结构化需求分析方法/3-数据建模.md' },
+        ]
       }
     ],
     socialLinks: [
