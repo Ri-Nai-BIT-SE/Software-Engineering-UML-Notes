@@ -107,7 +107,7 @@ if __name__ == "__main__":
     # 获取当前脚本所在目录
     script_dir = os.path.dirname(os.path.abspath(__file__))
     # 指定docs目录路径(以当前脚本为相对路径)
-    docs_dir = os.path.join(script_dir, "docs")
+    docs_dir = os.path.join(script_dir, "../docs")
     
     print(f"准备处理目录: {docs_dir}")
     

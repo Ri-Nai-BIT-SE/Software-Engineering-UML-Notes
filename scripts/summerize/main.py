@@ -7,9 +7,11 @@ import os
 
 if __name__ == "__main__":
     config = {}
-    with open("../config.json", "r") as f:
+    with open("config.json", "r") as f:
         config = json.load(f)
-
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    # 指定docs目录路径(以当前脚本为相对路径)
+    docs_dir = os.path.join(script_dir, "../../docs")
     server = config["server"]
     api_key = config["api_key"]
     endpoint = config["endpoint"]
@@ -58,7 +60,7 @@ if __name__ == "__main__":
         return result.replace("```markdown", "").replace("```", "")
 
     # ../docs 里的所有 md 文件(包括子目录)
-    for root, dirs, files in os.walk("../docs"):
+    for root, dirs, files in os.walk(docs_dir):
         for file in files:
             if file.endswith(".md"):
                 file_path = os.path.join(root, file)
