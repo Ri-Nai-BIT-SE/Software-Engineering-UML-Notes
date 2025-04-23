@@ -80,6 +80,9 @@ if __name__ == "__main__":
                             print(f"文件内容过短，跳过: {file_path}")
                             continue
                         
+                        # 打印文件路径
+                        print(f"正在处理: {file_path}")
+                        
                         # 只对内容部分进行总结
                         summary = summarize(content)
                         
@@ -93,11 +96,15 @@ if __name__ == "__main__":
                     if len(text) < 40:
                         print(f"文件内容过短，跳过: {file_path}")
                         continue
+                    
+                    # 打印文件路径
+                    print(f"正在处理: {file_path}")
+                    
                     # 没有 frontmatter 的情况
                     content = text
                     summary = summarize(content)
                     new_text = f":::details AI总结\n{summary}\n:::\n{content}"
-                
+
                 # 确保目标目录存在
                 # os.makedirs("../summary", exist_ok=True)
                 
