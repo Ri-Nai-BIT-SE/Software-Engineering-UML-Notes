@@ -84,6 +84,14 @@ export default defineConfig({
           { text: '2. 过程建模', link: '/第七章-结构化需求分析方法/2-过程建模.md' },
           { text: '3. 数据建模', link: '/第七章-结构化需求分析方法/3-数据建模.md' },
         ]
+      },
+      {
+        text: '第八章-面向对象分析与UML建模',
+        link: '/第八章-面向对象分析与UML建模/index.md',
+        items: [
+          { text: '1. 面向对象分析与UML建模概述', link: '/第八章-面向对象分析与UML建模/1-面向对象分析与UML建模概述.md' },
+          { text: '2. UML总体说明', link: '/第八章-面向对象分析与UML建模/2-UML总体说明.md' },
+        ]
       }
     ],
     socialLinks: [
