@@ -109,6 +109,7 @@ export default defineConfig({
           { text: '1. 面向对象分析与UML建模概述', link: '1-面向对象分析与UML建模概述.md' },
           { text: '2. UML总体说明', link: '2-UML总体说明.md' },
           { text: '3. 用例模型', link: '3-用例模型.md' },
+          { text: '4. 静态模型', link: '4-静态模型.md' },
         ]
       }
     ],
