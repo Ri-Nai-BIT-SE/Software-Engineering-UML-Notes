@@ -110,6 +110,17 @@ export default defineConfig({
           { text: '2. UML总体说明', link: '2-UML总体说明.md' },
           { text: '3. 用例模型', link: '3-用例模型.md' },
           { text: '4. 静态模型', link: '4-静态模型.md' },
+          { text: '5. 动态模型', link: '5-动态模型.md' },
+        ]
+      },
+      {
+        collapsed: true,
+        text: '第九章-需求验证与管理',
+        base: '/第九章-需求验证与管理/',
+        link: 'index.md',
+        items: [
+          { text: '1. 需求验证', link: '1-需求验证.md' },
+          { text: '2. 需求管理', link: '2-需求管理.md' },
         ]
       }
     ],
